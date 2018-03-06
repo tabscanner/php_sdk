@@ -24,6 +24,8 @@ $ composer require tabscanner/phpsdk
 
 ### Basic Usage
 
+Visit [Tab Scanner Alpha](https://alpha.tabscanner.com) for your API key 
+
 ```php
 use Tabscanner\Api;
 
