@@ -7,7 +7,7 @@ use GuzzleHttp\Client;
 class Api
 {
 	private $api_key;
-	private $api_url = 'http://52.90.149.223:3000/';
+	private $api_url = 'https://api.tabscanner.com/';
 
 	public function __construct($api_key)
     {
