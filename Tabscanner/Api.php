@@ -132,6 +132,9 @@ class Api
     			}
 
     			break;
+
+            case 'object'
+                break;
     		
     		default:
     			return [
