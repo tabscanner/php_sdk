@@ -42,6 +42,11 @@ class Api
     			$filename = basename($file);
     			$content = fopen($file, 'r');
     			break;
+
+            case 'object'
+                $filename = $file->getClientOriginalName();
+                $content = fopen($file->getPathname(), 'r');
+                break;
     	}
 
     	$response = $client->request('POST', $api_upload_url, [

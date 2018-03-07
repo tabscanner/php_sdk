@@ -19,12 +19,17 @@ This is an official PHP development kit for Tab Scanner API. For more informatio
 The recommended way to install Tab Scanner PHP SDK is through [Composer](https://getcomposer.org/).
 
 ```sh
-$ composer require tabscanner/phpsdk
+$ composer require tabscanner/phpsdk --prefer-stable
 ```
 
 ### Basic Usage
 
 Visit [Tab Scanner Alpha](https://alpha.tabscanner.com) for your API key 
+
+Note: The upload API can accept one of the following parameter:
+- array - single HTTP File Upload variable ($_FILES) (for array of files see upload_multiple method)
+- string - file path (used for fopen function)
+- object - a Laravel request file object https://laravel.com/docs/5.6/requests#files
 
 ```php
 use Tabscanner\Api;
@@ -34,9 +39,10 @@ $api = new Api('ApiKeyHere');
 /**
  * Upload receipt to AI server to be processed
  *
- * @param $file array|string
+ * @param $file array|string|object
  * array - single HTTP File Upload variable ($_FILES) (for array of files see upload_multiple method)
  * string - file path (used for fopen function)
+ * object - a Laravel request file object (https://laravel.com/docs/5.6/requests#files)
  * 
  * @return array
  */
