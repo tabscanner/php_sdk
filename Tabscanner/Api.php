@@ -43,7 +43,7 @@ class Api
     			$content = fopen($file, 'r');
     			break;
 
-            case 'object'
+            case 'object':
                 $filename = $file->getClientOriginalName();
                 $content = fopen($file->getPathname(), 'r');
                 break;
