@@ -133,7 +133,7 @@ class Api
 
     			break;
 
-            case 'object'
+            case 'object':
                 break;
     		
     		default:
