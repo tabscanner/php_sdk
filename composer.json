@@ -8,7 +8,7 @@
             "email": "julius@3.digital"
         }
     ],
-    "minimum-stability": "1.0",
+    "minimum-stability": "dev",
     "require": {
         "guzzlehttp/guzzle": "^6.3"
     },
