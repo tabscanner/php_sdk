@@ -7,11 +7,12 @@ use GuzzleHttp\Client;
 class Api
 {
 	private $api_key;
-	private $api_url = 'https://api.tabscanner.com/';
+	private $api_url;
 
-	public function __construct($api_key)
+	public function __construct($api_key, $api_url = 'https://api.tabscanner.com/')
     {
         $this->api_key = $api_key;
+        $this->api_url = $api_url;
     }
 
     public function upload($file)
