@@ -15,12 +15,16 @@ class Api
         $this->api_url = $api_url;
     }
 
-    public function upload($file)
+    public function upload($file, $credit = 0)
     {
     	$client = new Client();
-    	$api_upload_url = $this->api_url . $this->api_key . '/process';
+        $api_upload_url = $this->api_url . $this->api_key . '/process';
     	$file_type = gettype($file);
     	$validate = $this->validate($file);
+
+        if ($credit) {   
+            $api_upload_url = $this->api_url . $this->api_key . '/process/' . $credit;
+        }
 
     	if ($validate['error']) {
     		$response = [
