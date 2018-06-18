@@ -19,12 +19,12 @@ This is an official PHP development kit for Tab Scanner API. For more informatio
 The recommended way to install Tab Scanner PHP SDK is through [Composer](https://getcomposer.org/).
 
 ```sh
-$ composer require tabscanner/phpsdk --prefer-stable
+$ composer require tabscanner/phpsdk:1.0.2
 ```
 
 ### Basic Usage
 
-Visit [Tab Scanner Alpha](https://alpha.tabscanner.com) for your API key 
+Visit [Tab Scanner Admin](https://admin.tabscanner.com) for your API key 
 
 Note: The upload API can accept one of the following parameter:
 - array - single HTTP File Upload variable ($_FILES) (for array of files see upload_multiple method)
