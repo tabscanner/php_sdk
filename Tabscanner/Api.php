@@ -55,6 +55,10 @@ class Api
                 'name'     => 'file',
                 'filename' => $filename,
                 'contents' => $content
+            ],
+            [
+                'name' => 'documentType',
+                'contents' => 'auto'
             ]
         ];
 
